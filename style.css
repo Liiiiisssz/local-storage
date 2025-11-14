@@ -1,0 +1,15 @@
+:root{
+    --bg-color: #fff;
+    --text-color: #333;
+}
+
+.dark-theme{
+    --bg-color: #333;
+    --text-color: #fff;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
