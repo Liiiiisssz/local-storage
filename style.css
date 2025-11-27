@@ -1,15 +1,37 @@
-:root{
-    --bg-color: #fff;
-    --text-color: #333;
+.padrao-theme {
+    --bg-color: #00527C;
+    --text-color: #fff;
 }
 
-.dark-theme{
-    --bg-color: #333;
+.claro-theme{
+    --bg-color: #fff;
+    --text-color: #000;
+}
+
+.escuro-theme{
+    --bg-color: #464646;
     --text-color: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
 }
 
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 5rem;
+    
 }

@@ -4,6 +4,8 @@ const contador = document.querySelector('.contador')
 const tema = document.querySelector('#tema')
 const body = document.body 
 
+const temas = ["padrao", "claro", "escuro"];
+
 nome.textContent = localStorage.getItem("nome") || "Usuário";
 
 const visitsKey = 'siteVisits'
@@ -25,10 +27,11 @@ input.addEventListener('input', function(){
 
 const temaSalvo = localStorage.getItem("tema") || "claro"
 tema.value = temaSalvo
-body.classList.toggle('dark-theme', temaSalvo === 'escuro')
+body.classList.add(`${temaSalvo}-theme`)
 
 tema.addEventListener('change', () =>{
     const newTheme = tema.value
+    temas.forEach(t => body.classList.remove(`${t}-theme`));
     localStorage.setItem("tema", newTheme)
-    body.classList.toggle('dark-theme', newTheme === 'escuro')
+    body.classList.add(`${newTheme}-theme`)
 })
