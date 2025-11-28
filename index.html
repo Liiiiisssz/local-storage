@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1></h1>
+            <div class="header-inner">
+                <div id="logo">
+                    <img src="assets/logo.png" alt="" id="logo-img">
+                    <h1>NAKE GAME</h1>
+                </div>
+            </div>
         </div>
     </header>
 
     <div class="container">
         <main class="main">
-            <h2>Bem vindo <span class="nome">Usuário</span>!</h2>
-            <input type="text" class="input" placeholder="Digite seu nome:">
-            <p>Quantidade de visitas: <span class="contador">0</span></p>
+            <section class="greetings">
+                <h2>Bem vindo <span class="nome">Jogador</span>!</h2>
+                <input type="text" class="input" placeholder="Digite seu nome:">
+                <p>Quantidade de visitas: <span class="contador">0</span></p>
+                
+                <label for="tema">Escolha o tema:</label>
+                <select name="tema" id="tema">
+                    <option value="padrao">Padrão</option>
+                    <option value="claro">Claro</option>
+                    <option value="escuro">Escuro</option>
+                </select>
+            </section>
             
-            <label for="tema">Escolha o tema:</label>
-            <select name="tema" id="tema">
-                <option value="padrao">Padrão</option>
-                <option value="claro">Claro</option>
-                <option value="escuro">Escuro</option>
-            </select>
         </main>
     </div>
     
@@ -34,6 +42,6 @@
 
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
